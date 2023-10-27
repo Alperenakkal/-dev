@@ -1,0 +1,83 @@
+.light-blue{
+    color: rgb(153, 0, 255);
+}
+.bg-dark-blue{
+    background: #062e51;
+}
+
+.text-center{
+    text-align: center;
+}
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 1.75rem;
+}
+.inline{
+    display: inline;
+    align-items: center;
+}
+.text{
+    width: 1500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.dusen-yazi{
+    position: absolute;
+    left: 1;
+    top: 0.1;
+    animation: animasyon 4.25s ease-in-out infinite;
+
+}
+@keyframes animasyon{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    5%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+.bosluklu {
+    margin-bottom: 20px;
+ }
+ .box{
+    background: blue;
+    width: 100px;
+    height: 10px;
+    
+ }
+ /*BUTON*/
+ .btn{
+    margin-top: 1.25rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    
+    color: black;
+ }
+ .btn-block{
+    width: 100%;
+ }
+ /*Forms*/
+ .form-group{
+    padding: 0.25rem 0;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 8px;
+}

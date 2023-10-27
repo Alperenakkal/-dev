@@ -1,0 +1,285 @@
+ /* Navbar*/
+  *{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ a{
+    text-decoration: none;
+    color: #fff;
+ }
+ i{
+    padding: 0;
+    color: rgb(255, 0, 0);
+ }
+ html{
+    font-family: 'Poppins', sans-serif;
+}  
+ #navbar{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    margin: auto;
+    height: 70px;
+    background: linear-gradient(to left,#6a82fb,#fc5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+#navbar ul li a{
+    color: black;
+    padding: 0.5rem;
+
+}
+#navbar ul li a:hover{
+    background-color: rgb(101, 42, 165);
+    border-radius: 4px;
+    
+}
+/*Home*/
+ #home{
+    padding: 5rem;
+}
+
+#home .text{
+    font-size: x-large;
+    
+
+}
+#home .text span{
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: bisque;
+    color: coral;
+}
+#home .mesaj .tiklama {
+    border-radius: 100px;
+    background-color: blue;
+     
+    padding: 1rem;
+    color: #fff;
+}
+#home a{
+    top: 100px;
+    color: black;
+}  
+/*HAKKIMIZDA*/
+ #hakkimda{
+    margin-top: 100px;
+}
+#hakkimda .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hakkimda .items img{
+    border-radius: 500px;
+    
+} 
+/*YETENEKLER*/
+
+
+ #yetenekler{
+    display: grid;
+    height: 100%;
+   
+    
+}
+#yetenekler .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#yetenekler .menu img{
+    width: 35rem;
+    height: 23rem;
+   
+}
+ #yetenekler .skills-bar{
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 5px 10px rgb(0, 0, 0,0.2);
+} 
+#yetenekler .skills-bar .bar{
+    margin: 20px 0;
+}
+#yetenekler .skills-bar .bar:first-child{
+    margin-top:0px;
+}
+#yetenekler .skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+#yetenekler .skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showtext 0.5s 1s linear forwards;
+}
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+}
+
+#yetenekler .skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin:left;
+    box-shadow: inset 0px 1px 1px rgba(0,0, 0, 0.05),
+                      0px 0px rgba(255,255,255, 0.8);
+    animation: animasyon 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+#yetenekler .skills-bar .bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background-color: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin:left;
+    animation: animasyon 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    
+}
+@keyframes animasyon{
+    100%{
+        transform: scale(1);
+    }
+}
+#yetenekler .skills-bar .bar .progress-line.html span{
+    width: 30%;
+}
+#yetenekler .skills-bar .bar .progress-line.css span{
+    width: 20%;
+}
+#yetenekler .skills-bar .bar .progress-line.python span{
+    width: 40%;
+}
+#yetenekler .skills-bar .bar .progress-line.java span{
+    width: 60%;
+}
+#yetenekler .skills-bar .bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showtext 0.5s 1.5s linear forwards;
+}
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+} 
+ #yetenekler .skills-bar .bar .progress-line span::after{
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+ #yetenekler .skills-bar .bar .progress-line.html span::after{
+    content: "30%";
+}
+#yetenekler .skills-bar .bar .progress-line.css span::after{
+    content: "20%";
+}
+#yetenekler .skills-bar .bar .progress-line.python span::after{
+    content: "40%";
+}
+#yetenekler .skills-bar .bar .progress-line.java span::after{
+    content: "60%";
+} 
+/*Contact*/
+ #contact {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #fff;
+    padding: 1rem;
+    
+}
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer{
+    background-color: #111;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+footer .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+footer .footerContainer .socialIcons{
+    display: flex;
+    justify-content: center;
+}
+footer .footerContainer .socialIcons a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+footer .footerContainer .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+footer .footerContainer .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+footer .footerContainer .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+footer .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+footer .footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}  
